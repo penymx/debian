@@ -3,6 +3,8 @@
 # go to root
 cd
 
+echo ""
+echo ""
 echo "==========================================="
 echo "            Installasi Dimulai             "
 echo "==========================================="
@@ -76,7 +78,7 @@ service vnstat restart
 
 # install screenfetch
 cd
-wget https://raw.githubusercontent.com/wilkingdead/setup3/master/null/screenfetch-dev
+wget https://raw.githubusercontent.com/najahiiii/debian/master/screenfetch-dev
 mv screenfetch-dev /usr/bin/screenfetch-dev
 chmod +x /usr/bin/screenfetch-dev
 echo "clear" >> .profile
@@ -229,10 +231,10 @@ service squid3 restart
 
 # install webmin
 cd
-wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.870_all.deb"
-dpkg --install webmin_1.870_all.deb;
+wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.881_all.deb"
+dpkg --install webmin_1.881_all.deb;
 apt-get -y -f install;
-rm /root/webmin_1.870_all.deb
+rm /root/webmin_1.881_all.deb
 sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 service webmin restart
 service vnstat restart
@@ -522,15 +524,37 @@ echo "unset HISTFILE" >> /etc/profile
 
 # info
 clear
-echo "Setup by Ahmad Thoriq Najahi"  | tee -a log-install.txt
+echo "                                                             "  | tee -a log-install.txt
+echo "                                                             "  | tee -a log-install.txt
+echo "   SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS HHHHHHHHH     HHHHHHHHH"  | tee -a log-install.txt
+echo " SS:::::::::::::::S SS:::::::::::::::SH:::::::H     H:::::::H"  | tee -a log-install.txt
+echo "S:::::SSSSSS::::::SS:::::SSSSSS::::::SH:::::::H     H:::::::H"  | tee -a log-install.txt
+echo "S:::::S     SSSSSSSS:::::S     SSSSSSSHH::::::H     H::::::HH"  | tee -a log-install.txt
+echo "S:::::S            S:::::S              H:::::H     H:::::H  "  | tee -a log-install.txt
+echo "S:::::S            S:::::S              H:::::H     H:::::H  "  | tee -a log-install.txt
+echo " S::::SSSS          S::::SSSS           H::::::HHHHH::::::H  "  | tee -a log-install.txt
+echo "  SS::::::SSSSS      SS::::::SSSSS      H:::::::::::::::::H  "  | tee -a log-install.txt
+echo "    SSS::::::::SS      SSS::::::::SS    H:::::::::::::::::H  "  | tee -a log-install.txt
+echo "       SSSSSS::::S        SSSSSS::::S   H::::::HHHHH::::::H  "  | tee -a log-install.txt
+echo "            S:::::S            S:::::S  H:::::H     H:::::H  "  | tee -a log-install.txt
+echo "            S:::::S            S:::::S  H:::::H     H:::::H  "  | tee -a log-install.txt
+echo "SSSSSSS     S:::::SSSSSSSS     S:::::SHH::::::H     H::::::HH"  | tee -a log-install.txt
+echo "S::::::SSSSSS:::::SS::::::SSSSSS:::::SH:::::::H     H:::::::H"  | tee -a log-install.txt
+echo "S:::::::::::::::SS S:::::::::::::::SS H:::::::H     H:::::::H"  | tee -a log-install.txt
+echo " SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS   HHHHHHHHH     HHHHHHHHH"  | tee -a log-install.txt
+echo "                                                             "  | tee -a log-install.txt
+echo "                   Setup by Ahmad Thoriq Najahi              "  | tee -a log-install.txt
+echo "                                                             "  | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
 echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
 echo "OpenSSH  : 22, 143"  | tee -a log-install.txt
-echo "Dropbear : 80, 109, 110, 443"  | tee -a log-install.txt
+echo "Dropbear : 80, 109, 110"  | tee -a log-install.txt
+echo "SSL      : 443"  | tee -a log-install.txt
 echo "Squid3   : 8080, 8000, 3128 (limit to IP SSH)"  | tee -a log-install.txt
-echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
+echo "badvpn   : badvpn-udpgw port 7200"  | tee -a log-install.txt
 echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "----------"  | tee -a log-install.txt
+echo "------------------------------------------------------------"  | tee -a log-install.txt
 echo "axel"    | tee -a log-install.txt
 echo "bmon"    | tee -a log-install.txt
 echo "htop"    | tee -a log-install.txt
@@ -538,7 +562,7 @@ echo "iftop"    | tee -a log-install.txt
 echo "mtr"    | tee -a log-install.txt
 echo "rkhunter"    | tee -a log-install.txt
 echo "nethogs: nethogs venet0"    | tee -a log-install.txt
-echo "----------"  | tee -a log-install.txt
+echo "------------------------------------------------------------"  | tee -a log-install.txt
 echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "vnstat   : http://$MYIP:81/vnstat/"  | tee -a log-install.txt
 echo "MRTG     : http://$MYIP:81/mrtg/"  | tee -a log-install.txt
@@ -549,7 +573,7 @@ echo ""  | tee -a log-install.txt
 echo "VPS REBOOT TIAP JAM 00.00 !"  | tee -a log-install.txt
 echo""  | tee -a log-install.txt
 echo "Please Reboot your VPS !"  | tee -a log-install.txt
-echo "================================================"  | tee -a log-install.txt
+echo "------------------------------------------------------------"  | tee -a log-install.txt
 echo "Script Created By Ahmad Thoriq Najahi"  | tee -a log-install.txt
 cd ~/
 rm -f /root/debian7.sh
