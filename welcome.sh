@@ -16,4 +16,5 @@ echo
 echo -e "${BLUE}----------- Hai Admin, Selamat datang di Server $IP -----------${NORMAL}"
 echo -e "Jika butuh bantuan & Pertanyaan hubungi kami di https://facebook.com/Najahiii"
 echo -e "${NUMBER}---------- Silahkan ketik ${LRED}menu${NUMBER} untuk masuk ke Fitur Menu VPS ----------${NORMAL}"
+echo -e "${RED_TEXT}----------- Jangan Lupa Makan -----------${NORMAL}"
 echo ""
