@@ -74,7 +74,7 @@ function used_data(){
 }
 
 	clear
-	echo""
+	echo ""
 	echo "--------------- Selamat datang di Server - IP: $myip ---------------"
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
@@ -89,9 +89,8 @@ function used_data(){
 	echo -e "\e[032;1mTotal amount of ram:\e[0m $tram MB"
 	echo -e "\e[032;1mTotal amount of swap:\e[0m $swap MB"
 	echo -e "\e[032;1mSystem uptime:\e[0m $up"
-	echo -e "\e[032;1mScript by:\e[0m Ahmad Thoriq Najahi"
+	echo -e "\e[032;1mBy \e[0m Ahmad Thoriq Najahi"
 	echo "------------------------------------------------------------------------------"
-	echo "Seputar SSH & OpenVPN"
 	echo -e "\e[031;1m 1\e[0m) Buat Akun SSH/OpenVPN (\e[34;1muser-add\e[0m)"
 	echo -e "\e[031;1m 2\e[0m) Generate Akun SSH/OpenVPN (\e[34;1muser-gen\e[0m)"
 	echo -e "\e[031;1m 3\e[0m) Generate Akun Trial (\e[34;1muser-trial\e[0m)"
