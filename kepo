@@ -1,0 +1,60 @@
+#!/bin/bash
+red='\e[1;31m'
+green='\e[0;32m'
+NC='\e[0m'
+
+echo "Connecting to Server${red}.${NC}"
+sleep 0.1
+clear
+echo "Connecting to Server${red}..${NC}"
+sleep 0.2
+clear
+echo "Connecting to Server${red}...${NC}"
+sleep 0.3
+clear
+echo "Connecting to Server${red}....${NC}"
+sleep 0.4
+clear
+echo "Connecting to Server${red}.....${NC}"
+sleep 0.5
+echo "Connected ${green}200 OK${NC}..."
+sleep 0.2
+echo "Checking Permission${red}.${NC}"
+sleep 0.1
+clear
+echo "Checking Permission${red}..${NC}"
+sleep 0.2
+clear
+echo "Checking Permission${red}...${NC}"
+sleep 0.3
+clear
+echo "Checking Permission${red}....${NC}"
+sleep 0.4
+clear
+echo "Checking Permission${red}.....${NC}"
+sleep 0.5
+echo -e "${green}Permission Accepted...${NC}"
+sleep 1
+echo "                                                             "
+echo "                                                             "
+echo "   SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS HHHHHHHHH     HHHHHHHHH"
+echo " SS:::::::::::::::S SS:::::::::::::::SH:::::::H     H:::::::H"
+echo "S:::::SSSSSS::::::SS:::::SSSSSS::::::SH:::::::H     H:::::::H"
+echo "S:::::S     SSSSSSSS:::::S     SSSSSSSHH::::::H     H::::::HH"
+echo "S:::::S            S:::::S              H:::::H     H:::::H  "
+echo "S:::::S            S:::::S              H:::::H     H:::::H  "
+echo " S::::SSSS          S::::SSSS           H::::::HHHHH::::::H  "
+echo "  SS::::::SSSSS      SS::::::SSSSS      H:::::::::::::::::H  "
+echo "    SSS::::::::SS      SSS::::::::SS    H:::::::::::::::::H  "
+echo "       SSSSSS::::S        SSSSSS::::S   H::::::HHHHH::::::H  "
+echo "            S:::::S            S:::::S  H:::::H     H:::::H  "
+echo "            S:::::S            S:::::S  H:::::H     H:::::H  "
+echo "SSSSSSS     S:::::SSSSSSSS     S:::::SHH::::::H     H::::::HH"
+echo "S::::::SSSSSS:::::SS::::::SSSSSS:::::SH:::::::H     H:::::::H"
+echo "S:::::::::::::::SS S:::::::::::::::SS H:::::::H     H:::::::H"
+echo " SSSSSSSSSSSSSSS    SSSSSSSSSSSSSSS   HHHHHHHHH     HHHHHHHHH"
+echo "                                                             "
+echo "                   Setup by Ahmad Thoriq Najahi              "
+echo "                                                             "
+echo "                                                             "
+echo "                                                             "
